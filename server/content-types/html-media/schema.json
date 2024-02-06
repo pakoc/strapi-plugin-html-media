@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "html_medias",
+  "info": {
+    "singularName": "html-media",
+    "pluralName": "html-medias",
+    "displayName": "HTML Media files"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "fileName": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "viewUrl": {
+      "type": "string"
+    },
+    "size": {
+      "type": "integer"
+    }
+  }
+}
