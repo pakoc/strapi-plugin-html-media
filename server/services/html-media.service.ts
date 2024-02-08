@@ -3,23 +3,35 @@ import pluginId from "../../admin/src/pluginId";
 
 export default ({ strapi }: { strapi: Strapi }) => ({
   async save(data) {
-    const result = await strapi.entityService?.create(
+    const item = await strapi.entityService?.create(
       `plugin::${pluginId}.html-media`,
       {
         data,
       }
     );
-    return result;
+    return item;
   },
-  async findOne(uid: string) {
-    const result = await strapi?.db
+  async delete(uid: string) {
+    const item = await strapi?.db
       ?.query(`plugin::${pluginId}.html-media`)
       .findOne({
         where: {
           uid,
         },
       });
-
-    return result;
+    return await strapi.entityService?.delete(
+      `plugin::${pluginId}.html-media`,
+      item.id
+    );
+  },
+  async findOne(uid: string) {
+    const item = await strapi?.db
+      ?.query(`plugin::${pluginId}.html-media`)
+      .findOne({
+        where: {
+          uid,
+        },
+      });
+    return item;
   },
 });

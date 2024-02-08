@@ -66,7 +66,6 @@ const ZipUploader = forwardRef(
             <Actions media={mediaInfo} onDelete={onDelete} />
           </CarouselActions>
         }
-        style={{}}
       >
         <CarouselSlide>
           {loading ? (

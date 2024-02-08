@@ -5,8 +5,13 @@ import { getToken } from "../utils";
 
 export const mediaRequest = {
   getMediaByUID: async (uid: string): Promise<HtmlMedia> => {
-    return await request(`/${pluginId}/${uid}`, {
+    return request(`/${pluginId}/${uid}`, {
       method: "GET",
+    });
+  },
+  delete: async (uid: string): Promise<HtmlMedia> => {
+    return request(`/${pluginId}/${uid}`, {
+      method: "DELETE",
     });
   },
 };

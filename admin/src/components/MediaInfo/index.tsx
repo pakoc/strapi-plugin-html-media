@@ -1,6 +1,8 @@
 import { Attachment } from "@strapi/icons";
 import { HtmlMedia } from "../../types";
 
+import * as S from "./styles";
+
 interface MediaInfoProps {
   mediaInfo?: HtmlMedia | null;
 }
@@ -17,8 +19,8 @@ export const MediaInfo = ({ mediaInfo }: MediaInfoProps) => {
   }).format(mediaInfo?.size);
 
   return (
-    <div style={{ display: "flex", gap: 5 }}>
+    <S.Wrapper>
       <Attachment /> {mediaInfo?.fileName} {size}
-    </div>
+    </S.Wrapper>
   );
 };
