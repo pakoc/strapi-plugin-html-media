@@ -1,4 +1,4 @@
-# HTML MEDIA
+# HTML MEDIA STRAPI PLUGIN
 
 The html-media plugin provides a custom customField that allows you to upload zip archives with html pages to the Strapi CMS. These zip archives contain mini web applications with an index.html launch file in the root of the archive. Upon uploading a mini application archive, the server unpacks the archive and saves information about it in a separate table called html-media in the database.
 
