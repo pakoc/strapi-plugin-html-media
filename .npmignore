@@ -3,5 +3,3 @@ custom.d.ts
 node_modules/
 .eslintrc.js
 .vscode/
-admin/
-server/
