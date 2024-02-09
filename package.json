@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
+    "displayName": "Html Media",
     "name": "html-media",
-    "description": "The html-media plugin provides a custom customField that allows you to upload zip archives with html pages to the Strapi CMS",
+    "description": "Plugin provides a customField that allows you to upload zip archives with html pages to the Strapi CMS",
     "kind": "plugin"
   },
   "dependencies": {
@@ -33,17 +34,25 @@
     "styled-components": "^5.2.1"
   },
   "author": {
-    "name": "pakoc"
+    "name": "Pavel Kochnev",
+    "email": "kochnevpav@mail.ru",
+    "url": "https://github.com/pakoc"
   },
   "maintainers": [
     {
-      "name": "pakoc"
+      "name": "Pavel Kochnev",
+      "email": "kochnevpav@mail.ru",
+      "url": "https://github.com/pakoc"
     }
   ],
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
+  "keywords": [
+    "strapi",
+    "plugin"
+  ],
   "scripts": {
     "develop": "tsc -p tsconfig.server.json -w",
     "build": "tsc -p tsconfig.server.json"
