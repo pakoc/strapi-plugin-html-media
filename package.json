@@ -1,10 +1,10 @@
 {
-  "name": "html-media",
+  "name": "strapi-plugin-html-media",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "html-media",
-    "description": "Description of html-media plugin",
+    "description": "The html-media plugin provides a custom customField that allows you to upload zip archives with html pages to the Strapi CMS",
     "kind": "plugin"
   },
   "dependencies": {
@@ -33,11 +33,11 @@
     "styled-components": "^5.2.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "pakoc"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "pakoc"
     }
   ],
   "engines": {
