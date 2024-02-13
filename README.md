@@ -1,8 +1,16 @@
-# HTML MEDIA STRAPI PLUGIN
+# HTML MEDIA strapi plugin
 
 The html-media plugin provides a customField that allows you to upload zip archives with html pages to the Strapi CMS. These zip archives contain mini web applications with an index.html launch file in the root of the archive. Upon uploading a mini application archive, the server unpacks the archive and saves information about it in a separate table called html-media in the database.
 
-Each uploaded mini application is assigned a unique identifier called uid, through which you can retrieve information about it by making a GET request to /html-media/<uid>. The information about a mini application includes the following fields:
+![Plugin demo](./assets/demo.gif)
+
+Each uploaded mini application is assigned a unique identifier called uid, through which you can retrieve information about it by making a GET request to /html-media/<uid>:
+
+| Method | URL              | Description                   |     |
+| ------ | ---------------- | ----------------------------- | --- |
+| GET    | /html-media/:uid | Get info about uploaded media |     |
+
+The information about a mini application includes the following fields:
 
 ```json
 {
@@ -29,7 +37,30 @@ Enjoy using the html-media plugin for managing and uploading mini web applicatio
 
 ## ⏳ Installation
 
+Install the plugin in your Strapi project or your Strapi plugin.
+
+```
+npm i strapi-plugin-html-media
+```
+
 ## 🛠️ Plugin Configuration
+
+To modify the plugin configuration, add the following code to the file config/plugins.js.
+
+```
+export default () => ({
+  "html-media": {
+    enabled: true,
+    config: {
+      baseDir: "media",
+    },
+  },
+});
+```
+
+- The baseDir option is the root directory for unpacking ZIP archives and storing plugin files. This directory is placed inside the public/uploads directory.
+
+## API
 
 ## 🖐 Requirements
 
