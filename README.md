@@ -2,7 +2,7 @@
 
 The html-media plugin provides a customField that allows you to upload zip archives with html pages to the Strapi CMS. These zip archives contain mini web applications with an index.html launch file in the root of the archive. Upon uploading a mini application archive, the server unpacks the archive and saves information about it in a separate table called html-media in the database.
 
-![Plugin demo](./assets/demo.gif)
+![Plugin demo](https://raw.githubusercontent.com/pakoc/strapi-plugin-html-media/master/assets/demo.gif)
 
 Each uploaded mini application is assigned a unique identifier called uid, through which you can retrieve information about it by making a GET request to /html-media/<uid>:
 
