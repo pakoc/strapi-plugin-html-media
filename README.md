@@ -60,8 +60,6 @@ export default () => ({
 
 - The baseDir option is the root directory for unpacking ZIP archives and storing plugin files. This directory is placed inside the public/uploads directory.
 
-## API
-
 ## 🖐 Requirements
 
 Supported Strapi versions:
