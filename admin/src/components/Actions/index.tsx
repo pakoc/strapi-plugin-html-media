@@ -12,6 +12,9 @@ import { Eye, Trash, ExclamationMarkCircle } from "@strapi/icons";
 
 import { HtmlMedia } from "../../types";
 
+// @ts-ignore
+const baseUrl = strapi?.backendURL;
+
 interface ActionsProps {
   media?: HtmlMedia | null;
   onDelete: () => void;
@@ -26,7 +29,7 @@ export const Actions = ({ media, onDelete }: ActionsProps) => {
   };
 
   const viewHandler = () => {
-    const url = window.location.origin + media?.viewUrl;
+    const url = baseUrl + media?.viewUrl;
     window.open(url);
   };
 
