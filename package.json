@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-html-media",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Plugin provides a customField that allows you to upload zip archives with html pages to the Strapi CMS",
   "strapi": {
     "displayName": "Html Media",
@@ -55,7 +55,8 @@
   ],
   "scripts": {
     "develop": "tsc -p tsconfig.server.json -w",
-    "build": "tsc -p tsconfig.server.json"
+    "build": "tsc -p tsconfig.server.json",
+    "prepare": "npm run build"
   },
   "license": "MIT"
 }
